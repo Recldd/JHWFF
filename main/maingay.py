@@ -5,8 +5,6 @@ idx = 0
 tmr = 0
 
 WIDTH, HEIGHT = 1280, 720
-char = pygame.image.load("resources/img/char/adventurer-idle-2-00.png")
-char = pygame.transform.scale(char, (100, 74))
 
 def main():
     global idx, tmr
@@ -22,8 +20,8 @@ def main():
                 pygame.quit()
                 sys.exit()
 
-        key = pygame.key.get_pressed()
-
+        ScreenManager.StartScreen(screen).render()
+ 
         pygame.display.update()
         clock.tick(60)
 

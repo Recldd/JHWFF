@@ -33,7 +33,7 @@ def main():
             player.left -= 6
 
         if key[pygame.K_RIGHT]:
-            player.left += 6
+            player.left += 6    
 
         if player.bottom < 720:
             gvel += 0.4
