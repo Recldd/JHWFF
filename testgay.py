@@ -5,7 +5,7 @@ idx = 0
 tmr = 0
 
 WIDTH, HEIGHT = 1280, 720
-char = pygame.image.load("resources/img/char/adventurer-idle-2-00.png")
+char = pygame.image.load("main/resources/img/char/adventurer-idle-2-00.png")
 char = pygame.transform.scale(char, (100, 74))
 
 def main():
@@ -50,11 +50,7 @@ def main():
 
             else:
                 if dj and not jumpkeydown:
-                    if gvel > 0:
-                        gvel = -10
-                    
-                    else:
-                        gvel -= 5
+                    gvel = -10
                     
                     dj = False
 
